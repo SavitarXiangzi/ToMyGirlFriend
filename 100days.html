@@ -335,7 +335,7 @@
     <span class="tape"></span>
     <h1 class="title">我们的 <span class="num">100</span> 天<span class="heart">♡</span></h1>
     <span class="underline"></span>
-    <p class="sub">从 2026.04.29 开始的故事 · 今天是第 <b id="dayNum">100</b> 天</p>
+    <p class="sub">从 2026.04.28 开始的故事 · 今天是第 <b id="dayNum">100</b> 天</p>
     <span class="stamp">100 DAYS · 纪念日快乐</span>
 
     <div class="patch">
@@ -388,7 +388,7 @@
   "use strict";
 
   /* ── 恋爱第一天：改成你们在一起的那天，天数会自动计算 ── */
-  var START = new Date(2026, 3, 29, 0, 0, 0);
+  var START = new Date(2026, 4, 28, 0, 0, 0);
 
   function pad(n){ return n < 10 ? "0" + n : "" + n; }
   function tick(){
@@ -410,7 +410,7 @@
   tick();
 
   /* ── 点击撒小星星 ── */
-  var TYPES = ["✿","✦","♡","★","✧"];
+  var TYPES = ["✿","✦","♡","★","✧","⭐"];
   var COLORS = ["#d96c6c","#c96f4a","#d9a441","#7d9474","#8fa8b8"];
   document.addEventListener("pointerdown", function(e){
     var el = document.createElement("span");

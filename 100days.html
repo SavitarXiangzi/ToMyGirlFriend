@@ -388,7 +388,7 @@
   "use strict";
 
   /* ── 恋爱第一天：改成你们在一起的那天，天数会自动计算 ── */
-  var START = new Date(2026, 4, 28, 0, 0, 0);
+  var START = new Date(2026, 3, 28, 0, 0, 0);
 
   function pad(n){ return n < 10 ? "0" + n : "" + n; }
   function tick(){
@@ -396,7 +396,7 @@
     var ms = now.getTime() - START.getTime();
     if (ms < 0) ms = 0;
     var DAY = 86400000;
-    var days = Math.floor(ms / DAY) + 1;
+    var days = Math.floor(ms / DAY);
     var rest = ms % DAY;
     var h = Math.floor(rest / 3600000);
     var m = Math.floor(rest % 3600000 / 60000);
